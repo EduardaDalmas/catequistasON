@@ -1,1 +1,65 @@
 // app global css in SCSS form
+@font-face {
+  font-family: customfont;
+  src: url(./fontes/Contrail_One/ContrailOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(./fontes/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden; /* Para evitar rolagem horizontal */
+}
+
+.header-menu {
+  background-color: #2433BC;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 25rem;
+  padding: 1rem;
+}
+
+.option a {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  text-decoration: none;
+  font-family: 'customfont';
+  margin-right: 1.2rem;
+}
+
+.option a:hover {
+  color: #F8059B;
+}
+
+.imagem_tema {
+  width: 100%;
+  height: auto; /* Mantém a proporção original da imagem */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Cor do texto */
+  font-size: 2rem; /* Tamanho da fonte do texto */
+  font-weight: regular; /* Peso da fonte do texto */
+  text-align: center; /* Alinhamento do texto */
+  font-family:'montserrat';
+}
+
+.highlight {
+  background-color: #F8059B;
+}
