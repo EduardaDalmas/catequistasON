@@ -1,5 +1,5 @@
 <template>
-  <q-parallax>
+  <q-parallax :height="600">
     <template v-slot:media>
       <img src="~assets/capa.png" class="imagem_tema">
     </template>
@@ -13,7 +13,7 @@
           right: 0
         }"
       >
-      <div class="text-overlay">“Deixem vir a mim as <span class="highlight"><b>crianças</b></span>, não as impeçam,
+      <div class="text-overlay">“Deixem vir a mim as <span class="highlight">crianças</span>, não as impeçam,
         pois o Reino de Deus pertence aos que são
         semelhantes a elas”. - Marcos 10, 14</div>
       </div>
@@ -21,9 +21,15 @@
   </q-parallax>
 
   <div class="sesion">
-
+    <div class="title row">
+      Apresentação
+    </div>
+    <div class="text row">
+      Seja bem-vindo(a) ao site do projeto &nbsp; <span class="highlight">CatequistasON</span>
+      Hoje em dia, tudo está conectado, e a catequese não pode ficar de fora.
+      Em um mundo onde tudo compete para atrair a atenção das crianças e adolescentes, uma catequese dinâmica e atrativa é fundamental para que os catequizandos se interessem e se envolvam com a catequese.<br>
+    </div>
   </div>
-
 </template>
 
 <script>
