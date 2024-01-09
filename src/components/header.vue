@@ -9,7 +9,7 @@
         <a href="/register">Dinâmicas</a>
       </div>
       <div class="option">
-        <a href="/register">Contato</a>
+        <a href="/register">Orações</a>
       </div>
     </div>
   </div>
