@@ -97,8 +97,10 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref, onMounted } from "vue";
 import ButtonSocialMedia from "../components/ButtonSocialMedia.vue";
+import { db } from "../../firebaseConfig.js";
+import { collection, getDocs } from "firebase/firestore";
 
 export default defineComponent({
   name: "IndexPage",
@@ -108,6 +110,19 @@ export default defineComponent({
   },
 
   setup() {
+    const dados = ref([]);
+
+    onMounted(async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "temas"));
+        querySnapshot.forEach((doc) => {
+          dados.value.push({ id: doc.id, ...doc.data() });
+        });
+      } catch (error) {
+        console.error("Erro ao obter dados do Firestore:", error);
+      }
+    });
+
     let medias = [
       {
         icon: "lab la-linkedin-in",
@@ -133,6 +148,7 @@ export default defineComponent({
 
     return {
       medias,
+      dados,
     };
   },
 });

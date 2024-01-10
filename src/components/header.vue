@@ -4,13 +4,13 @@
     <div class="gt-sm">
       <div class="options row">
         <div class="option">
-          <a href="/login">Home</a>
+          <a href="/">Home</a>
         </div>
         <div class="option">
-          <a href="/register">Dinâmicas</a>
+          <a href="/#/dinamicas">Dinâmicas</a>
         </div>
         <div class="option">
-          <a href="/register">Orações</a>
+          <a href="/">Orações</a>
         </div>
       </div>
     </div>
@@ -36,13 +36,13 @@
     >
       <q-scroll-area class="fit">
         <div class="option">
-          <a href="/login">Home</a>
+          <a href="/">Home</a>
         </div>
         <div class="option">
-          <a href="/register">Dinâmicas</a>
+          <a href="/dinamicas">Dinâmicas</a>
         </div>
         <div class="option">
-          <a href="/register">Orações</a>
+          <a href="/">Orações</a>
         </div>
       </q-scroll-area>
     </q-drawer>
@@ -50,14 +50,30 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref, onMounted } from "vue";
+import { db } from "../../firebaseConfig.js";
+import { collection, getDocs } from "firebase/firestore";
 
 export default defineComponent({
   name: "HeaderPage",
 
   setup() {
+    const dados = ref([]);
+
+    onMounted(async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "temas"));
+        querySnapshot.forEach((doc) => {
+          dados.value.push({ id: doc.id, ...doc.data() });
+        });
+      } catch (error) {
+        console.error("Erro ao obter dados do Firestore:", error);
+      }
+    });
+
     return {
       drawerRight: ref(false),
+      dados,
     };
   },
 });
