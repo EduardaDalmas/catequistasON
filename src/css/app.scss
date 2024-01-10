@@ -138,3 +138,72 @@ body {
   text-align: center;
   margin-top: 2%;
 }
+
+@media screen and (max-width: 768px) {
+  .text-overlay {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Cor do texto */
+    font-size: 1.3rem; /* Tamanho da fonte do texto */
+    font-weight: regular; /* Peso da fonte do texto */
+    text-align: center; /* Alinhamento do texto */
+    font-family: "montserrat";
+  }
+
+  .menu-expansivo {
+    background-color: #2433bc;
+    padding: 2rem 2rem 1rem 1rem;
+  }
+
+  .icon-menu {
+    color: #fff;
+    padding: 1rem 0;
+    text-decoration: none;
+    font-family: "customfont";
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+  }
+
+  .logo {
+    max-width: 15rem;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .separator-design {
+    width: 100%;
+  }
+
+  .imagem_eduarda {
+    max-width: 10rem;
+  }
+
+  .medias {
+    font-size: 1rem;
+  }
+
+  .textName {
+    font-size: 1rem;
+  }
+
+  .footer-mobile {
+    background-color: #2433bc1a;
+  }
+
+  .text-footer {
+    font-size: 0.7rem;
+    font-family: "montserrat";
+    color: #f8059b;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}

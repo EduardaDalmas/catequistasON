@@ -1,5 +1,5 @@
 <template>
-  <div class="footer row">
+  <div class="footer row gt-sm">
     <div class="col-4 col-md-4">
       <div class="row sesion-medias">
         <ButtonSocialMedia :medias="medias" />
@@ -13,6 +13,21 @@
     </div>
     <div class="col-4 col-md-4">
       <img src="~assets/logo.png" alt="logo" class="logo" />
+    </div>
+  </div>
+  <div class="footer-mobile lt-md">
+    <div class="col">
+      <div class="row justify-center">
+        <div class="text-footer">CatequistasON 2024</div>
+      </div>
+      <div class="row justify-center">
+        <div class="text-footer">Desenvolvido por Eduarda Dalmás</div>
+      </div>
+    </div>
+    <div class="col text-center">
+      <div class="row justify-center">
+        <img src="~assets/logo.png" alt="logo" class="logo" />
+      </div>
     </div>
   </div>
 </template>

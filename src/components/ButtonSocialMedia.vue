@@ -11,7 +11,7 @@
 
 <script>
 import { defineComponent } from "vue";
-import useNotify from "../composables/useNotify";
+import useNotify from "../composables/UseNotify";
 
 export default defineComponent({
   name: "ButtonSocialMedia",
