@@ -162,6 +162,20 @@ body {
   font-family: "customfont";
 }
 
+.expansion-item {
+  display: flex;
+  margin: 0 auto;
+  font-family: "montserrat";
+  color: #2433bc;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 50rem;
+}
+
+.q-item {
+  width: 50rem;
+}
+
 @media screen and (max-width: 768px) {
   .text-overlay {
     position: absolute;

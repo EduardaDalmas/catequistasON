@@ -1,6 +1,11 @@
 <template>
-  <div class="option-dynamics col-4" v-for="opcao in opcoes" :key="opcao">
-    <a href="/">{{ opcao.nome }}</a>
+  <div
+    class="option-dynamics col-4"
+    v-for="opcao in opcoes"
+    :key="opcao"
+    @click="selection(opcao.valor)"
+  >
+    <a>{{ opcao.nome }}</a>
   </div>
 </template>
 
@@ -14,6 +19,12 @@ export default defineComponent({
     opcoes: {
       type: Array,
       required: true,
+    },
+  },
+
+  methods: {
+    selection(valor) {
+      this.$emit("valor", valor);
     },
   },
 });

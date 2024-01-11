@@ -7,7 +7,7 @@
           <a href="/">Home</a>
         </div>
         <div class="option">
-          <a href="/#/dinamicas">Dinâmicas</a>
+          <a href="/#/tematicas">Dinâmicas</a>
         </div>
         <div class="option">
           <a href="/">Orações</a>
@@ -39,7 +39,7 @@
           <a href="/">Home</a>
         </div>
         <div class="option">
-          <a href="/dinamicas">Dinâmicas</a>
+          <a href="/#/tematicas">Dinâmicas</a>
         </div>
         <div class="option">
           <a href="/">Orações</a>
