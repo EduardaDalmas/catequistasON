@@ -33,6 +33,14 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+
+        <q-card-actions>
+          <q-btn
+            class="btn-design"
+            label="Acessar playlist Spotify"
+            @click="abrirLink(opcao.link)"
+          />
+        </q-card-actions>
       </q-card>
     </q-expansion-item>
   </q-list>
@@ -43,6 +51,12 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "ExpansionItem",
+
+  methods: {
+    abrirLink(link) {
+      window.open(link, "_blank");
+    },
+  },
 
   props: {
     opcoes: {
