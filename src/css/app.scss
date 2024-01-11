@@ -224,10 +224,12 @@ body {
     font-size: 1rem;
     text-align: left;
     width: 100%;
+    min-width: 25rem;
   }
 
   .q-item {
-    width: 10%;
+    width: 100%;
+    min-width: 25rem;
   }
 
   .img-design {
@@ -244,13 +246,10 @@ body {
     margin: 0 auto;
   }
 
-  .q-item {
-    width: 19rem;
-  }
-
   .list-design {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    width: 100%;
   }
 
   .text-overlay {
