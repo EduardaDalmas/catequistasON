@@ -1,7 +1,7 @@
 <template>
   <q-list
     bordered
-    class="rounded-borders q-ml-xl"
+    class="rounded-borders list-design"
     v-for="opcao in opcoes"
     :key="opcao.id"
   >

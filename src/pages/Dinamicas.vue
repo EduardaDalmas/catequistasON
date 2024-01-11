@@ -1,5 +1,5 @@
 <template>
-  <div class="title center">Dinâmicas</div>
+  <div class="title">Dinâmicas</div>
   <div class="row q-mb-xl">
     <ExpansionItem :opcoes="dados" />
   </div>

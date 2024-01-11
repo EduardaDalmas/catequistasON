@@ -176,7 +176,42 @@ body {
   width: 50rem;
 }
 
+.list-design {
+  margin-left: 2rem;
+}
+
 @media screen and (max-width: 768px) {
+  .option-dynamics {
+    background-color: #f8059b;
+    color: #fff;
+    border-radius: 1rem;
+    width: 90% !important;
+    height: 8rem !important;
+    margin: 1rem 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .expansion-item {
+    display: flex;
+    margin: 0 auto;
+    font-family: "montserrat";
+    color: #2433bc;
+    font-size: 1.5rem;
+    text-align: left;
+    width: 90%;
+  }
+
+  .q-item {
+    width: 90%;
+  }
+
+  .list-design {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .text-overlay {
     position: absolute;
     top: 35%;
