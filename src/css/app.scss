@@ -180,6 +180,20 @@ body {
   margin-left: 2rem;
 }
 
+.img-design {
+  max-width: 30rem;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
+.video-design {
+  max-width: 30rem;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 768px) {
   .option-dynamics {
     background-color: #f8059b;
@@ -200,12 +214,25 @@ body {
     color: #2433bc;
     font-size: 1rem;
     text-align: left;
-    width: 19rem;
+    width: 90%;
+  }
+
+  .q-item {
+    width: 90%;
   }
 
   .img-design {
     max-width: 10rem;
-    height: auto; /* Mantém a proporção original da imagem */
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .video-design {
+    max-width: 10rem;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
   }
 
   .q-item {
@@ -250,6 +277,10 @@ body {
 
   .title {
     font-size: 1.5rem;
+    font-family: "customfont";
+    color: #2433bc;
+    text-align: left;
+    margin: 1rem !important;
   }
 
   .text {
