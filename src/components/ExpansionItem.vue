@@ -16,13 +16,23 @@
         <q-card-section class="textName">
           {{ opcao.descricao }}
         </q-card-section>
-        <q-img
-          v-if="opcao.imagem"
-          :src="opcao.imagem"
-          :alt="opcao.titulo"
-          class="img-design"
-        />
-        <q-video v-if="opcao.video" class="video-design" :src="opcao.video" />
+        <div v-if="opcao.imagem">
+          <q-img
+            v-if="opcao.imagem"
+            :src="opcao.imagem"
+            :alt="opcao.titulo"
+            class="img-design"
+          />
+        </div>
+
+        <iframe
+          class="video-design"
+          :src="opcao.video"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </q-card>
     </q-expansion-item>
   </q-list>

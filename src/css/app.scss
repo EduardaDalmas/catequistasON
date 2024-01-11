@@ -169,11 +169,11 @@ body {
   color: #2433bc;
   font-size: 1.5rem;
   text-align: left;
-  width: 50rem;
+  width: 60rem;
 }
 
 .q-item {
-  width: 50rem;
+  width: 60rem;
 }
 
 .list-design {
@@ -188,8 +188,8 @@ body {
 }
 
 .video-design {
-  max-width: 30rem;
-  height: auto;
+  width: 30rem;
+  min-height: 20rem;
   display: flex;
   margin: 0 auto;
 }
