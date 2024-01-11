@@ -26,6 +26,7 @@
         </div>
 
         <iframe
+          v-if="opcao.video"
           class="video-design"
           :src="opcao.video"
           title="YouTube video player"
@@ -34,7 +35,7 @@
           allowfullscreen
         ></iframe>
 
-        <q-card-actions>
+        <q-card-actions v-if="opcao.link">
           <q-btn
             class="btn-design"
             label="Acessar playlist Spotify"
