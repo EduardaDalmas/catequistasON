@@ -203,6 +203,11 @@ body {
     width: 19rem;
   }
 
+  .img-design {
+    max-width: 10rem;
+    height: auto; /* Mantém a proporção original da imagem */
+  }
+
   .q-item {
     width: 19rem;
   }

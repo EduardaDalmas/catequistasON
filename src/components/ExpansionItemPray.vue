@@ -14,7 +14,10 @@
       <q-card>
         <q-separator class="separator-design" />
         <q-card-section class="textName">
-          {{ opcao.descricao }}
+          <div v-for="opcao in opcao.descricao" :key="opcao">
+            {{ opcao }}
+            <q-separator class="q-mt-md q-mb-lg" />
+          </div>
         </q-card-section>
         <q-img
           v-if="opcao.imagem"
@@ -32,7 +35,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "ExpansionItem",
+  name: "ExpansionItemPray",
 
   props: {
     opcoes: {

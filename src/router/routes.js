@@ -9,6 +9,10 @@ const routes = [
         path: "dinamicas/:tematica",
         component: () => import("pages/Dinamicas.vue"),
       },
+      {
+        path: "oracoes",
+        component: () => import("pages/Oracoes.vue"),
+      },
     ],
   },
 

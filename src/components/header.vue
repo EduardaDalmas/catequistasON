@@ -10,7 +10,7 @@
           <a href="/#/tematicas">Dinâmicas</a>
         </div>
         <div class="option">
-          <a href="/">Orações</a>
+          <a href="/#/oracoes">Orações</a>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
           <a href="/#/tematicas">Dinâmicas</a>
         </div>
         <div class="option">
-          <a href="/">Orações</a>
+          <a href="/#/oracoes">Orações</a>
         </div>
       </q-scroll-area>
     </q-drawer>
