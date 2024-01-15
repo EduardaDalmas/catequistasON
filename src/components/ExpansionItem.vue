@@ -16,7 +16,7 @@
         <q-card-section class="textName">
           {{ opcao.descricao }}
         </q-card-section>
-        <div v-if="opcao.imagem">
+        <div v-if="opcao.imagem" class="q-mb-md">
           <q-img
             v-if="opcao.imagem"
             :src="opcao.imagem"
@@ -27,7 +27,7 @@
 
         <iframe
           v-if="opcao.video"
-          class="video-design"
+          class="video-design q-mt-lg"
           :src="opcao.video"
           title="YouTube video player"
           frameborder="0"
